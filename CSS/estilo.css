@@ -1,0 +1,265 @@
+body {
+    background-image: url(../img/Fondo.jpg);
+    font-family: Arial, sans-serif; /* Añadir una fuente predeterminada */
+    margin: 0;
+    padding: 0;
+    flex: 1 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Barra de navegación */
+.navbar-sticky {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.start {
+    display: flex; 
+    justify-content: center; 
+}
+
+.start ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.start ul li {
+    margin-right: 20px; 
+}
+
+.start ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.start ul li a:hover {
+    background-color: #555;
+    border-radius: 20px;
+}
+
+
+.header {
+    width: 100%;
+    max-width: 1920px;
+    color: white;
+    padding: 30px 15px;
+    margin: 0 auto;
+    border-bottom: 10px solid #122c3d;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 0px 0px 30px 30px ;
+    text-align: center;
+    
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto; 
+    
+}
+.contenido{
+    flex: 50%; 
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(122, 124, 128);
+}
+
+/* Noticias */
+
+
+.noticia{
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    padding: 15px 20px 20px;
+    margin: 20px; 
+    max-height: 530px; 
+     overflow: hidden;
+    
+}
+
+
+.Top {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+}
+
+.Top .Titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.listanoticias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listanoticias li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+
+
+/* Estilos para los artículos */
+.Noticias {
+    margin: auto;
+    position: relative;
+    min-height: 80px;
+    padding-top: 5px;
+}
+
+.Noticias figure {
+    margin: 0 15px 0 0;
+    position: relative;
+}
+
+.Noticias figure img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+
+/* Título de la noticia */
+.Noticias .Titulo {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    max-height: 45px;
+    overflow: hidden;
+    margin-left: 82px;
+    top: 0px;
+}
+
+.Noticias .Titulo a {
+    color: #333;
+    text-decoration: none;
+}
+
+.Noticias .Titulo a:hover {
+    color: #007bff;
+}
+
+/* Categoría de la noticia */
+.CatLnk {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    max-width: 1920px;
+    background-color: #2e2e2e;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+}
+
+/*Sobre mi */
+.perfil{
+    width: 1300px;
+    height: auto; 
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+.informacion{
+    
+    display: flex; 
+    align-items: start; 
+    margin: 20px; 
+    
+}
+
+.informacion img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorinformacion{
+    
+    margin: 10px;
+}
+table {
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 10px; 
+}
+
+td {
+    text-align: center; 
+}
+
+table img {
+    max-width: 100px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+width: 300px;
+height: 200px;
+border-color: black;
+border-radius: 20px;
+transition: 300ms ease-in-out;
+box-shadow: 0 5px 10px 0 #0a0a0a7c;
+margin: 0px auto 0px auto;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.card:hover{
+transform: rotate(-6deg);
+}
+
+.card:hover.card {
+z-index: 1;
+translate: 68px;
+}
